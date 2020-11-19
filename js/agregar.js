@@ -27,7 +27,7 @@ postear = () => {
     //value de variables
     auth.onAuthStateChanged(
         (user)=>{
-
+            
             let referencia = database.ref('usuarios/'+user.uid+'/contactos').push(); 
             let n = nom.value;
             let t = num.value;  
@@ -48,6 +48,15 @@ postear = () => {
         }
     );
 }
+
+//si entra a agregar y no hay usuario lo devuelve
+auth.onAuthStateChanged(
+    (user)=>{
+        if(user == null){
+            console.log("puto");
+            window.location.href = 'login.html';
+        }
+    });
 
 //accion de agregar contactos
 agregarbt.addEventListener('click', postear);

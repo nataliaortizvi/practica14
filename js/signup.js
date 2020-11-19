@@ -25,6 +25,7 @@ auth.onAuthStateChanged(
                     contra: password.value,
                     correo: mail.value
                 };
+                //comprobacion de claves iguales
                 if(password.value == repassword.value){
                     database.ref('usuarios/'+userDB.id).set(userDB).then(
                         ()=>{
@@ -33,6 +34,7 @@ auth.onAuthStateChanged(
                     );
                 }
             }else{
+                //si entra a signup y hay usuario lo devuelve
                 window.location.href = 'index.html';
             }
         }
@@ -43,6 +45,7 @@ auth.onAuthStateChanged(
 btregistro.addEventListener('click', ()=>{
     isSigninUp = true;
     if(password.value == repassword.value){
+        //subir datos de new user
         auth.createUserWithEmailAndPassword(mail.value, password.value);
     }else{
         alert('las contraseñas no coinciden');

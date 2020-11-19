@@ -19,8 +19,8 @@ class ContactosList{
             this.contact.telefono
         );
 
-        let bterase = document.createElement('button');
-        bterase.classname = 'borrarbt';
+        let bterase = document.createElement('div');
+        bterase.className = 'btdeletes';
         bterase.innerHTML = (
             'Borrar'
         );

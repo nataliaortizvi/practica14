@@ -9,9 +9,10 @@ const btlogin = document.getElementById('btlogin');
 auth.onAuthStateChanged(
     (user)=>{
         if(user == null){
-
+           
         }else{
-            windor.location.href = 'index.html';
+            //si entra a login y hay usuario lo devuelve
+            window.location.href = 'index.html';
         }
     }
 );

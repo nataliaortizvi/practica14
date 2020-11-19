@@ -100,19 +100,28 @@ p{
     color: rgb(0, 0, 0);
     width:50%;
     padding: 2%;
+    position: relative;
 }
 
 .lista *{
-    background-color:rgb(238, 238, 238);
     padding: 2%;
 }
 
 .infonum{
     color:rgb(151, 151, 151);
+    background-color:rgb(238, 238, 238);
 }
 
 .infonom{
     font-weight: bold;
+    background-color:rgb(238, 238, 238);
+}
+
+.btdeletes {
+    position: absolute;
+    background-color:rgb(228, 90, 90);
+    color: rgb(255, 255, 255);
+    right: 10mm;
 }
 
 

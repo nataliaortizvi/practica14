@@ -10,6 +10,18 @@ const contactos = document.getElementById('contactos');
 //para saber quien entro
 auth.onAuthStateChanged(
     (user)=>{
+        //si entra a index y no hay usuario lo devuelve
+        if(user == null){
+            window.location.href = 'login.html';
+        }else{
+            database.ref('usuarios/'+user.uid).once(
+                'value',
+                (data)=>{
+                    let userDB = data.val();
+                    myname.innerHTML = userDB.nombre;
+                }
+            ); 
+        }
             //lectura de contactos
             database.ref('usuarios/'+user.uid+'/contactos').on('value', function(data){
                 contactos.innerHTML='';
@@ -22,19 +34,6 @@ auth.onAuthStateChanged(
                     }
                 );
             });
-        
-
-        if(user == null){
-            window.location.href = 'login.html';
-        }else{
-            database.ref('usuarios/'+user.uid).once(
-                'value',
-                (data)=>{
-                    let userDB = data.val();
-                    myname.innerHTML = userDB.nombre;
-                }
-            ); 
-        }
     }
 );
 
