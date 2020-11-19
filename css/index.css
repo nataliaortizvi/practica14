@@ -1,0 +1,122 @@
+h1{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    color: white;
+    padding: 2%;
+    background-color: rgb(107, 107, 255);
+}
+
+p{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    background-color: rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
+    padding: 1%;
+    width: 93%;
+}
+
+#topdata {
+    display: flex;
+    flex-direction:column;
+    background-color: rgb(107, 107, 255);
+}
+
+#topdata *{
+    display: flex;
+    flex-direction:column;
+    margin-top: 0cm;
+    margin-bottom: 0cm;
+}
+
+#add {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+}
+
+#addbt {
+    color: rgb(0, 0, 0);
+    background-color: rgb(238, 238, 238);
+    width: 6em;
+    margin-right: 2mm;
+}
+
+#formulario{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+#formulario *{
+    margin-top: 5mm;
+    padding: 1mm;
+    width:10cm;
+    height: 5mm;
+}
+
+#btregistro {
+    color: rgb(255, 255, 255);
+    background-color:  rgb(107, 107, 255);
+    width: 10em;
+    height: 3em;
+}
+
+#btlogin {
+    color: rgb(255, 255, 255);
+    background-color:  rgb(107, 107, 255);
+    width: 10em;
+    height: 3em;
+}
+
+#agregarbt {
+    color: rgb(255, 255, 255);
+    background-color:  rgb(107, 107, 255);
+    width: 10em;
+    height: 3em;
+}
+
+#atrasbt {
+    color: rgb(0, 0, 0);
+    background-color:  rgb(236, 236, 236);
+    width: 6em;
+    height: 3em;
+}
+
+#contactos{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.lista {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    width:50%;
+    padding: 2%;
+}
+
+.lista *{
+    background-color:rgb(238, 238, 238);
+    padding: 2%;
+}
+
+.infonum{
+    color:rgb(151, 151, 151);
+}
+
+.infonom{
+    font-weight: bold;
+}
+
+
+
+
+
+
